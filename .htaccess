@@ -1,0 +1,5 @@
+DirectoryIndex index.php
+RewriteEngine on
+RewriteBase /CI_business/
+RewriteCond $1 !^(index\.php|images|css|js|robots\.txt)
+RewriteRule ^(.*)$ index.php/$1 [L]
